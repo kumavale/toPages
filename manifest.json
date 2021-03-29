@@ -1,0 +1,16 @@
+{
+    "name": "toPages",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Add link to GitHub Pages",
+    "icons": {
+        "128":  "icons/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://github.com/*"],
+        "js": [
+            "content.js"
+        ],
+        "all_frames": true
+    }]
+}
